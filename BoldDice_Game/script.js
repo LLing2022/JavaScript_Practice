@@ -83,6 +83,11 @@ btnHold.addEventListener('click', function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove('player--active');
+
+      const message = `🎉 Hi!! Congrats Player ${
+        activePlayer + 1
+      }, You Win! 🎉`;
+      alert(message);
     } else {
       //3. switch player
       switchPlayer();
